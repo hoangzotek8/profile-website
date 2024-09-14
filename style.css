@@ -1,4 +1,30 @@
 /* General Styles */
+/* Header Info Styles */
+.header-info {
+    position: fixed; /* Giữ vị trí cố định trên màn hình */
+    top: 10px; /* Vị trí cách đỉnh */
+    right: 20px; /* Vị trí cách phải */
+    text-align: right; /* Căn lề phải */
+    background-color: rgba(240, 197, 197, 0.8); /* Nền trắng mờ */
+    padding: 10px; /* Padding */
+    border-radius: 8px; /* Bo góc */
+    box-shadow: 0 0 10px rgba(238, 222, 222, 0.1); /* Bóng đổ nhẹ */
+    font-size: 0.9rem; /* Kích thước chữ */
+    z-index: 1000; /* Đảm bảo nó ở trên cùng */
+}
+
+.datetime {
+    margin-bottom: 5px; /* Khoảng cách giữa ngày giờ và thời tiết */
+}
+
+.weather {
+    display: flex; /* Dùng Flexbox để căn chỉnh biểu tượng và văn bản */
+    align-items: center; /* Căn giữa theo chiều dọc */
+}
+
+.weather i {
+    margin-right: 5px; /* Khoảng cách giữa biểu tượng và văn bản */
+}
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
@@ -63,7 +89,18 @@ body {
     margin-left: 10px; /* Thêm khoảng cách giữa văn bản và biểu tượng */
     color: #e2b33b; /* Màu biểu tượng */
 }
+.education {
+    text-align: center; /* Căn giữa phần Education */
+    margin: 20px 0;
+}
 
+.education p#quote {
+    font-style: italic; /* Font chữ nghiêng cho câu quote */
+    color: rgb(255, 255, 255); /* Màu chữ nhẹ nhàng */
+    font-size: 1.1rem; /* Kích thước chữ lớn hơn một chút */
+    line-height: 1.6; /* Tăng khoảng cách giữa các dòng */
+    margin-top: 10px; /* Khoảng cách trên */
+}
 
 /* Right Column */
 .right-column {

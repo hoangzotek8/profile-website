@@ -7,8 +7,17 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
+    <!-- Weather and Time Display -->
+    <div class="header-info">
+        <div id="datetime" class="datetime"></div>
+        <div id="weather" class="weather"></div>
+    </div>
+
+
+    <script src="script.js"></script>
     <div class="container">
         <!-- Left Column -->
         <div class="left-column">
@@ -36,7 +45,7 @@
             </div>
             <div class="education">
                 <h2>Education</h2>
-                <p>Learn from people around</p>
+                <p id="quote"></p>
                 
             </div>
         </div>
@@ -47,6 +56,7 @@
             <h3>AI Pro</h3>
             <div class="professional-profile">
                 <h2>Professional Profile</h2>
+                
                 <ul class="profile-list">
                     <li><strong>AI Consultant:</strong> Provide expert advice to businesses on integrating AI into their operations and strategies. Identify opportunities for automation and optimization using AI technologies.</li>
                     <li><strong>AI Product Manager:</strong> Lead the development of AI-driven products from concept to launch. Define product requirements, manage cross-functional teams, and ensure alignment with market needs and business goals.</li>
@@ -54,6 +64,9 @@
                     <li><strong>AI Trainer and Educator:</strong> Conduct workshops, webinars, and training sessions on AI topics. Develop educational materials and programs to teach individuals and organizations about AI fundamentals and applications.</li>
                     <li><strong>AI Artist or Designer:</strong> Utilize AI tools to create unique digital art, designs, and interactive media. Experiment with AI-generated visuals and develop creative projects that blend technology with artistic expression.</li>
                 </ul>
+            
+               
+               
             </div>
             <div class="experience">
                 <h2>Professional Experience</h2>
@@ -68,5 +81,6 @@
             </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
