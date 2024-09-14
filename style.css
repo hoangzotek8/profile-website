@@ -83,74 +83,61 @@ body {
     margin-bottom: 20px;
 }
 
-.professional-profile {
-    margin: 20px 0;
-}
-
-.professional-profile h2 {
-    color: #e2b33b;
-    margin-bottom: 15px;
-    border-bottom: 2px solid #e2b33b;
-    padding-bottom: 5px;
-}
-
-.profile-list {
-    list-style-type: none; /* Loại bỏ dấu chấm gạch đầu dòng mặc định */
-    padding: 0;
-    margin: 0;
-}
-
-.profile-list li {
-    margin-bottom: 15px;
-    padding-left: 20px;
-    position: relative; /* Để thêm biểu tượng tùy chỉnh */
-    font-size: 1rem;
-    line-height: 1.5;
-}
-
-.profile-list li::before {
-    content: "\2022"; /* Biểu tượng gạch đầu dòng tùy chỉnh */
-    color: #e2b33b; /* Màu của biểu tượng */
-    font-weight: bold;
-    display: inline-block; 
-    width: 1em;
-    margin-left: -1em; /* Đưa biểu tượng ra bên trái văn bản */
-}
-
+.professional-profile,
 .experience {
     margin: 20px 0;
+    word-wrap: break-word; /* Bẻ từ nếu từ quá dài */
+    overflow-wrap: break-word; /* Hỗ trợ thêm cho việc bẻ từ */
+    max-width: 100%; /* Đảm bảo không vượt quá khung chứa */
 }
 
+.professional-profile h2,
 .experience h2 {
     color: #e2b33b;
     margin-bottom: 15px;
     border-bottom: 2px solid #e2b33b;
     padding-bottom: 5px;
+    max-width: 100%; /* Đảm bảo tiêu đề không tràn */
+}
+
+.profile-list,
+.experience-item {
+    padding-left: 20px; /* Khoảng cách từ bên trái */
+    position: relative;
+    font-size: 1rem;
+    line-height: 1.5;
+    max-width: 100%; /* Đảm bảo không vượt quá khung chứa */
+}
+
+.profile-list li,
+.experience-item p {
+    margin: 10px 0;
+    padding-left: 0;
+    max-width: 100%; /* Đảm bảo văn bản không tràn */
 }
 
 .experience-item {
     margin-bottom: 20px;
 }
 
-.experience-item h3 {
-    margin: 0;
-    color: #2c2c2c;
-    font-size: 1.5rem;
-}
-
-.experience-item p {
-    margin: 5px 0;
-    color: #333;
-    font-size: 1rem;
-    line-height: 1.6;
-}
-
-/* Responsive */
+/* Responsive Design cho thiết bị di động */
 @media screen and (max-width: 768px) {
     .container {
-        flex-direction: column;
+        flex-direction: column; /* Chuyển cột sang hàng trên màn hình nhỏ */
+        padding: 10px; /* Giảm padding */
     }
+
     .left-column, .right-column {
-        width: 100%;
+        width: 100%; /* Sử dụng toàn bộ chiều rộng */
+        padding: 10px; /* Thêm khoảng cách bên trong */
+    }
+
+    .profile-list li::before,
+    .experience-item h3 {
+        font-size: 1.2rem; /* Điều chỉnh kích thước chữ cho dễ đọc */
+    }
+
+    .profile-list, .experience-item {
+        padding-left: 10px; /* Điều chỉnh khoảng cách cho phù hợp */
     }
 }
